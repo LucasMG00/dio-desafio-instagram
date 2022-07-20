@@ -1,0 +1,168 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #181a1b;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 60%;
+    height: 100vh;
+}
+
+.phone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.phone img {
+    height: 40rem;
+}
+
+.continue {
+    display: flex;
+    align-items: center; /* horizontal */
+    justify-content: space-around; /* vertical */
+    flex-direction: column;
+    width: 50%;
+    min-height: 34rem;
+}
+
+.group {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: #000000;
+    width: 80%;
+    padding: 1.3rem 0;
+    border: 1px solid #736b5e;
+}
+
+.group:nth-child(1) {
+    min-height: 19rem;
+    margin-bottom: 10px;
+}
+
+.logo {
+    height: 3rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.profile-photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.profile-photo img {
+    height: 6rem;
+}
+
+.login {
+    background-color: #004daa;
+    color: #e8e6e3;
+    padding: 8px;
+    border-radius: 4px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.logout {
+    color: #20a7ff;
+    margin-top: 1rem;
+    margin-bottom: 10px;
+}
+
+.not-account {
+    color: rgb(160, 160, 160);
+}
+
+.not-you {
+    margin-bottom: 2px;
+}
+
+.link-blue {
+    color: #20a7ff;
+}
+
+.space {
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+.get-the-app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1.3rem 0;
+    color: #e8e6e3;
+}
+
+.download {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+}
+
+.app-download {
+    height: 3rem;
+    width: 10.2rem;
+    background-size: cover;
+}
+
+.app-download:nth-child(1) {
+    background-image: url('./img/appstore-button.png');
+}
+
+.app-download:nth-child(2) {
+    background-image: url('./img/googleplay-button.png');
+}
+
+@media (max-width: 1024px) {
+    .wrapper {
+        width: 90%;
+    }
+}
+
+@media (max-width: 650px) {
+
+    .wrapper {
+        width: 90%;
+    }
+
+    .phone {
+        display: none;
+    }
+
+    .continue {
+        width: 100%;
+    }
+    
+}
