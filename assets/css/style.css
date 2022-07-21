@@ -138,11 +138,11 @@ body {
 }
 
 .app-download:nth-child(1) {
-    background-image: url('./img/appstore-button.png');
+    background-image: url('../../assets/img/appstore-button.png');
 }
 
 .app-download:nth-child(2) {
-    background-image: url('./img/googleplay-button.png');
+    background-image: url('../../assets/img/googleplay-button.png');
 }
 
 @media (max-width: 1024px) {
